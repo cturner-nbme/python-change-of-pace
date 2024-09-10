@@ -56,9 +56,6 @@ The file can then be used to install your dependencies within a chosen environme
 ```powershell
     python -m pip install -r requirements.txt
 ```
-  <!-- - Activate script
-  - Requirements.txt
-  - Installing other libraries -->
 
 ### Folder Structure
 For the most part, once the virtual environment is setup it can just be left alone. In terms of files, only two things should have been added as part of this template, your `requirements.txt` file and your `.venv` directory
@@ -74,7 +71,13 @@ your_project_folder/
     └── pyvenv.cfg
 ```
 
-Packaging your Own Libraries
+### Frequently Asked Questions
+1. Do I need to manually update the `requirements.txt` file everytime I add/remove a library?
+   - Yes, but you can use a `pip freeze` to save you some typing
+2. I updated my Python version and now nothing works!
+   - Virtual environments have links back to your original python installation. If you removed your old version of Python, then those links will break. Recreate your venv to resolve this
+
+<!-- Packaging your Own Libraries
 - Brief overview of libraries
 - Why would you want to? What benefits does it give you?
 - Code organization & sharing
@@ -84,4 +87,4 @@ Packaging your Own Libraries
 --- Metadata
 - How to make your library available to others
 -- Nexus? Pypi? DevOps feed?
--- Twine
+-- Twine -->
